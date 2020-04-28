@@ -8,8 +8,15 @@ body {
     max-width: 960px; margin: 0 auto;
 }
 
-nav {background-color: #414141; color: white;
+#hamburger {padding: 10px; text-align: right; color:white;
+    background-color: #414141; font-size: 100%;}
+
+#hamburger:hover { background-color: #777777;}
+
+nav {background-color: #414141; color: white; display:none;
 }
+
+.nav {display: block; }
 
 nav ul{ list-style-type: none; margin: 0px; padding: 0px;}
 
@@ -21,10 +28,10 @@ li a{color: white; text-decoration: none;}
 li:hover { background-color: #777777;}
 
 .fb {background: url("https://cdn.worldvectorlogo.com/logos/facebook-icon-white.svg") 
-no-repeat center; background-size: 40%;}
+no-repeat center; background-size: 75%;}
 
 .tw {background: url("https://cfcdnpull-creativefreedoml.netdna-ssl.com/wp-content/uploads/2017/06/Twitter-featured.png") 
-no-repeat center; background-size: 40%;}
+no-repeat center; background-size: 80%;}
 
 .social {
     flex: 1 1 0;
@@ -32,6 +39,8 @@ no-repeat center; background-size: 40%;}
     margin: 0 auto;
     justify-content: center;
 }
+
+.social li {min-width:40px}
 
 #blocks {
     margin: 20px;
@@ -52,6 +61,9 @@ article h2{
 }
 
 @media screen and (min-width: 600px){
+
+    #hamburger {display:none;}
+
     nav {
         display: flex;
         justify-content: space-between;

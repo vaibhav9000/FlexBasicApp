@@ -4,3 +4,7 @@ $("a.stack").on("click", function(){
 $("a.grid").on("click", function(){
     $("article").removeClass("stack");
 });
+
+$("#hamburger").on("click", function(){
+    $("#nav").toggleClass("nav");
+})
