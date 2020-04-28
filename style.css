@@ -64,6 +64,7 @@ article h2{
 
     #hamburger {display:none;}
 
+    .nav {display:flex;}
     nav {
         display: flex;
         justify-content: space-between;
